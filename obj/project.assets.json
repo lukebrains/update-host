@@ -11,42 +11,6 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Microsoft.PowerShell.SDK/6.1.0": {
-        "type": "package",
-        "compile": {
-          "ref/netstandard2.0/System.Management.Automation.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-arm/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "linux-arm"
-          },
-          "runtimes/linux-x64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "osx"
-          },
-          "runtimes/win-arm/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "win-arm"
-          },
-          "runtimes/win-arm64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll": {
-            "assetType": "runtime",
-            "rid": "win-x86"
-          }
-        }
-      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -76,24 +40,6 @@
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
         "runtime.json"
-      ]
-    },
-    "Microsoft.PowerShell.SDK/6.1.0": {
-      "sha512": "VvDF+2mwObIhmCf8JQJR5om4LOtZO6O5ejcX6vf6ZtY0cbJpRvXFfQ0+3T81ryPBG9YXJHudIOgmUfOkTA2LhA==",
-      "type": "package",
-      "path": "microsoft.powershell.sdk/6.1.0",
-      "files": [
-        ".signature.p7s",
-        "microsoft.powershell.sdk.6.1.0.nupkg.sha512",
-        "microsoft.powershell.sdk.nuspec",
-        "ref/netstandard2.0/System.Management.Automation.dll",
-        "runtimes/linux-arm/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/linux-x64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/osx/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/win-arm/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/win-arm64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/win-x64/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll",
-        "runtimes/win-x86/lib/netstandard2.0/Microsoft.PowerShell.SDK.dll"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -226,7 +172,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "Microsoft.PowerShell.SDK >= 6.1.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -272,10 +217,6 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Microsoft.PowerShell.SDK": {
-            "target": "Package",
-            "version": "[6.1.0, )"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
