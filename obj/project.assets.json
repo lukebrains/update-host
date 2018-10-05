@@ -25,6 +25,15 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "PowerShellStandard.Library/3.0.0-preview-01": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Management.Automation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Management.Automation.dll": {}
+        }
       }
     }
   },
@@ -168,11 +177,22 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "PowerShellStandard.Library/3.0.0-preview-01": {
+      "sha512": "+nf/U+bOdCdKc15iioS95tbo7UpbcLM2yQ5oS2aP6jEEyw0HjuY8ctLit7HToRt9zkIrmui+DCq5DaG2nSqx4Q==",
+      "type": "package",
+      "path": "powershellstandard.library/3.0.0-preview-01",
+      "files": [
+        "lib/netstandard2.0/System.Management.Automation.dll",
+        "powershellstandard.library.3.0.0-preview-01.nupkg.sha512",
+        "powershellstandard.library.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "PowerShellStandard.Library >= 3.0.0-preview-01"
     ]
   },
   "packageFolders": {
@@ -222,6 +242,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "PowerShellStandard.Library": {
+            "target": "Package",
+            "version": "[3.0.0-preview-01, )"
           }
         },
         "imports": [
