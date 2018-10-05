@@ -7,25 +7,29 @@ namespace HostUpdate
 
     public class HostUpdate : Cmdlet //Extending Class1 from Cmdlet Class
     {
+        private string osVersion = Environment.OSVersion.ToString();
         protected override void BeginProcessing() {
-            Console.WriteLine(Environment.OSVersion);
+            Console.WriteLine(osVersion);
             Console.WriteLine("Updating host " + Environment.MachineName  + ".");
         }
 
         protected override void ProcessRecord() {
-            if(Environment.OSVersion.ToString() == "Unix 17.7.0.0") {
-                System.Diagnostics.Process process = new System.Diagnostics.Process();
-                System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
-                info.FileName = "brew";
-                info.Arguments = "update";
-                info.UseShellExecute = true;
-                process.StartInfo = info;
-                process.Start();
-                process.WaitForExit();
-                if(process.ExitCode != 0) {
-                    Console.WriteLine("Update failed.");
+            if(osVersion == "Unix 17.7.0.0") {
+                if(System.IO.File.Exists("/usr/local/bin/brew")) {
+                    // Update with the brew command line tool.
+                    System.Diagnostics.Process process = new System.Diagnostics.Process();
+                    System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
+                    info.FileName = "brew";
+                    info.Arguments = "update";
+                    info.UseShellExecute = true;
+                    process.StartInfo = info;
+                    process.Start();
+                    process.WaitForExit();
+                    if(process.ExitCode != 0) {
+                        Console.WriteLine("Update failed.");
+                    }
                 } else {
-                    Console.WriteLine("Update complete.");
+                    Console.Write("Update failed: The brew command line tool is not installed on " + Environment.MachineName + ".");
                 }
             }
         }
