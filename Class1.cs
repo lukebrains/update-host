@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Management.Automation;
 
-namespace UpdateHost
+namespace HostUpdate
 {
     [Cmdlet(VerbsCommon.Get, "HostUpdate")] //Add this PowerShell cmdlet name
 
