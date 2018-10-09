@@ -29,7 +29,7 @@ namespace HostUpdate
                         Console.WriteLine("Update failed.");
                     }
                 } else if(System.IO.File.Exists("/etc/centos-release")) {
-                    // Update with the brew command line tool.
+                    // Update with the yum command line tool.
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
                     info.FileName = "yum";

@@ -39,15 +39,15 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "EvOc8H/PaFFxvMepg21optxgLFr+6JT01P3kjD8MpGXciz8cD1IG3644P6VJ6odWTHxPDeADo5hUWuThtqqg7Q==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
+        "Microsoft.NETCore.Platforms.1.1.0.nupkg.sha512",
+        "Microsoft.NETCore.Platforms.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-        "microsoft.netcore.platforms.nuspec",
         "runtime.json"
       ]
     },
@@ -196,25 +196,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ltbrady\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/ltbrady/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ltbrady\\Desktop\\Scripts\\update-host\\update-host.csproj",
+      "projectUniqueName": "/Users/ltbrady/Desktop/Software/dotnet/update-host/update-host.csproj",
       "projectName": "update-host",
-      "projectPath": "C:\\Users\\ltbrady\\Desktop\\Scripts\\update-host\\update-host.csproj",
-      "packagesPath": "C:\\Users\\ltbrady\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ltbrady\\Desktop\\Scripts\\update-host\\obj\\",
+      "projectPath": "/Users/ltbrady/Desktop/Software/dotnet/update-host/update-host.csproj",
+      "packagesPath": "/Users/ltbrady/.nuget/packages/",
+      "outputPath": "/Users/ltbrady/Desktop/Software/dotnet/update-host/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ltbrady\\Desktop\\Scripts\\update-host\\NuGet.Config",
-        "C:\\Users\\ltbrady\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ltbrady/Desktop/Software/dotnet/update-host/NuGet.Config",
+        "/Users/ltbrady/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
