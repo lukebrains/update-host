@@ -7,3 +7,12 @@
 /Users/ltbrady/Desktop/Software/dotnet/update-host/obj/release/netstandard2.0/update-host.AssemblyInfo.cs
 /Users/ltbrady/Desktop/Software/dotnet/update-host/obj/release/netstandard2.0/update-host.dll
 /Users/ltbrady/Desktop/Software/dotnet/update-host/obj/release/netstandard2.0/update-host.pdb
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\release\netstandard2.0\update-host.deps.json
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\release\netstandard2.0\update-host.dll
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\release\netstandard2.0\update-host.pdb
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.csprojAssemblyReference.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.csproj.CoreCompileInputs.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.AssemblyInfoInputs.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.AssemblyInfo.cs
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.dll
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\release\netstandard2.0\update-host.pdb

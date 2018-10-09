@@ -1,0 +1,9 @@
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\Debug\netstandard2.0\update-host.deps.json
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\Debug\netstandard2.0\update-host.dll
+C:\Users\ltbrady\Desktop\Scripts\update-host\bin\Debug\netstandard2.0\update-host.pdb
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.csprojAssemblyReference.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.csproj.CoreCompileInputs.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.AssemblyInfoInputs.cache
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.AssemblyInfo.cs
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.dll
+C:\Users\ltbrady\Desktop\Scripts\update-host\obj\Debug\netstandard2.0\update-host.pdb

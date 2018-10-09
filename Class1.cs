@@ -14,7 +14,7 @@ namespace HostUpdate
         }
 
         protected override void ProcessRecord() {
-            if(osVersion == "Unix 17.7.0.0") {
+            if(osVersion.Contains("Unix")) {
                 if(System.IO.File.Exists("/usr/local/bin/brew")) {
                     // Update with the brew command line tool.
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
@@ -28,8 +28,21 @@ namespace HostUpdate
                     if(process.ExitCode != 0) {
                         Console.WriteLine("Update failed.");
                     }
+                } else if(System.IO.File.Exists("/etc/centos-release")) {
+                    // Update with the brew command line tool.
+                    System.Diagnostics.Process process = new System.Diagnostics.Process();
+                    System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
+                    info.FileName = "yum";
+                    info.Arguments = "update -y";
+                    info.UseShellExecute = true;
+                    process.StartInfo = info;
+                    process.Start();
+                    process.WaitForExit();
+                    if(process.ExitCode != 0) {
+                        Console.WriteLine("Update failed.");
+                    }
                 } else {
-                    Console.Write("Update failed: The brew command line tool is not installed on " + Environment.MachineName + ".");
+                    Console.Write("Update failed: Unsupported Unix version.");
                 }
             }
         }
