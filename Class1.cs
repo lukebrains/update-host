@@ -32,7 +32,7 @@ namespace HostUpdate
                     // Update with the brew command line tool.
                     System.Diagnostics.Process process = new System.Diagnostics.Process();
                     System.Diagnostics.ProcessStartInfo info = new System.Diagnostics.ProcessStartInfo();
-                    info.FileName = "yum";
+                    info.FileName = "sudo /usr/bin/yum";
                     info.Arguments = "update -y";
                     info.UseShellExecute = true;
                     process.StartInfo = info;
